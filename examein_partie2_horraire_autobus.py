@@ -7,7 +7,9 @@ horraire=[ '6:14', '7:44', '9:14', '10:44', '12:14', '13:44', '15:14', '16:44', 
 '''aujourdhui = datetime.now()
 print(aujourdhui.strftime('il est %H:%M '))'''
 
-
+# heure=input('quel heure est til?')
+heure = ('12:10')  ##test##
+minutes = 90
 
 def heure_de_passage(heure, minutes):
     '''
@@ -16,7 +18,7 @@ def heure_de_passage(heure, minutes):
     :param minutes: minutes avant le procchain passage
     :return: minutes restants avant le prochain passage du bus hanté.
     '''
-    intervales = int(heure - minutes)
+    intervales = (heure - minutes)
     if intervales <= 15:
         print(f" l'autobuss passe à [{horraire}]")
         print(f"le buss arriveras dans [{intervales}] minutes.")
@@ -31,8 +33,7 @@ def heure_de_passage(heure, minutes):
 #abs(aujourdhui.date() - la_date):
 
 if __name__ == "__main__":
-    #heure=input('quel heure est til?')
-    heure=('12:10')  ##test##
-    heure_de_passage( heure=heure, minutes=90)
+
+    heure_de_passage( heure, minutes)
 
     #là j'essaie de faire en sorte que python fasse une soustraction des minutes sur l'heure
