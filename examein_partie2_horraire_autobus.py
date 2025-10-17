@@ -1,16 +1,17 @@
-from datetime import *
+#from datetime import *
 
-#je sais pas pourquoi le code focntionne pas. je vais dans mes notes et il y a rien qui débloque.
+#je sais pas pourquoi le code fonctionne pas. je vais dans mes notes et il y a rien qui débloques.
 
-horraire=[ '6:14', '7:44', '9:14', '10:44', '12:14', '13:44', '15:14', '16:44', '18:14' , '19:44', '21:14' ]
+horraire=[ '6h14', '7h44', '9:14', '10:44', '12:14', '13:44', '15:14', '16:44', '18:14' , '19:44', '21:14' ]
 #ça c'est la liste pour python.^^^^
 
-heure= '12:12'
-#heure = (input('quel heure est til?'))
+##tests## heure= '12:12'
+heure = (input('quel heure est til?'))
 #je veux vraiment que python figure que j'essaie de lui donner une valeur avec l'utilisateur mais il comprends pas c'est quoi.
 # Et sa me rends folle.
 minutes = 90
 #je regades toutes mes lignes et il y a rien qui cloche.....
+#je sais que j'ai un problème de traduction mais je sais pas où.
 def heure_de_passage(heure, minutes, intervales):
     '''
     fonction qui vas calculer les minutes restants le prochain passage du bus hanté:
