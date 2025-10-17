@@ -9,7 +9,7 @@ print(aujourdhui.strftime('il est %H:%M '))'''
 
 
 
-def heure_de_passage(heure, intervales, minutes):
+def heure_de_passage(heure, minutes):
     '''
     fonction qui vas calculer les minutes restants le prochain passage du bus hanté:
     :param intervales: 90 minutes
@@ -33,6 +33,6 @@ def heure_de_passage(heure, intervales, minutes):
 if __name__ == "__main__":
     #heure=input('quel heure est til?')
     heure=('12:10')  ##test##
-    heure_de_passage(intervales=90, heure=heure, minutes=0)
+    heure_de_passage( heure=heure, minutes=90)
 
     #là j'essaie de faire en sorte que python fasse une soustraction des minutes sur l'heure
